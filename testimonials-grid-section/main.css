@@ -1,0 +1,200 @@
+/*GOOGLE FONT*/
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+/* font-family: 'Barlow Semi Condensed', sans-serif; */
+
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(210, 46%, 95%);
+}
+.grid-container{
+    max-width: 1000px;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 22px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.daniel-grid-item{
+    background-color: hsl(263, 55%, 52%);
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+.daniel-grid-item .name{
+    color: hsl(0, 0%, 81%);
+}
+.daniel-grid-item .verified{
+    color: hsl(0, 0%, 81%);
+    opacity: 50%;
+}
+.daniel-grid-item .encabezado{
+    color: hsl(0, 0%, 100%);
+}
+.daniel-grid-item .parrafo{
+    color: hsl(0, 0%, 81%);
+    opacity: 70%;
+}
+.daniel-grid-item .user img{
+    border: solid hsl(263, 92%, 75%) 2px;
+}
+
+.jonathan-grid-item{
+    background-color: hsl(217, 19%, 35%);
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+.jonathan-grid-item .name{
+    color: hsl(0, 0%, 81%);
+}
+.jonathan-grid-item .verified{
+    color: hsl(0, 0%, 81%);
+    opacity: 50%;
+}
+.jonathan-grid-item .encabezado{
+    color: hsl(0, 0%, 100%);
+}
+.jonathan-grid-item .parrafo{
+    color: hsl(0, 0%, 81%);
+    opacity: 70%;
+}
+
+.kira-grid-item{
+    background-color: hsl(0, 0%, 100%);
+    grid-column: 4/5;
+    grid-row: 1/3;
+}
+.kira-grid-item .name{
+    color: hsl(219, 29%, 14%);
+}
+.kira-grid-item .verified{
+    color: hsl(219, 29%, 14%);
+    opacity: 50%;
+}
+.kira-grid-item .encabezado{
+    color: hhsl(219, 29%, 14%);
+}
+.kira-grid-item .parrafo{
+    color: hsl(219, 29%, 14%);
+    opacity: 70%;
+}
+
+.jeanette-grid-item{
+    background-color: hsl(0, 0%, 100%);
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.jeanette-grid-item .name{
+    color: hsl(219, 29%, 14%);
+}
+.jeanette-grid-item .verified{
+    color: hsl(219, 29%, 14%);
+    opacity: 50%;
+}
+.jeanette-grid-item .encabezado{
+    color: hhsl(219, 29%, 14%);
+}
+.jeanette-grid-item .parrafo{
+    color: hsl(219, 29%, 14%);
+    opacity: 70%;
+}
+
+.patrick-grid-item{
+    background-color: hsl(219, 29%, 14%);
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+.patrick-grid-item .name{
+    color: hsl(0, 0%, 81%);
+}
+.patrick-grid-item .verified{
+    color: hsl(0, 0%, 81%);
+    opacity: 50%;
+}
+.patrick-grid-item .encabezado{
+    color: hsl(0, 0%, 100%);
+}
+.patrick-grid-item .parrafo{
+    color: hsl(0, 0%, 81%);
+    opacity: 70%;
+}
+.patrick-grid-item .user img{
+    border: solid hsl(263, 92%, 75%) 2px;
+}
+
+.grid-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px;
+    padding: 25px 30px;
+    border-radius: 8px;
+}
+.user{
+    display: flex;
+    align-items: center;
+}
+.user img{
+    border-radius: 50%;
+    width: 28px;
+}
+.name-verified{
+    margin-left: 16px;
+}
+.name{
+    font-size: 12px;
+}
+.verified{
+    font-size: 10px;
+}
+.encabezado{
+    font-size: 16px;
+}
+.parrafo{
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 720px) {
+    body{
+        height: auto;
+        padding: 15px;
+    }
+    .grid-container{
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+    }
+    .name{
+        font-size: 14px;
+    }
+    .verified{
+        font-size: 12px;
+    }
+    .encabezado{
+        font-size: 18px;
+    }
+    .parrafo{
+        font-size: 14px;
+    }
+}
